@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  align-self: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+.name-container {
+  display: flex;
+}
+
+.emailAndItems-container {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+/* #input-name {
+}
+#input-lastname {
+}
+#input-email {
+} */
+
+#house {
+  height: 20px;
+}
+
+#gitnoria-house {
+  height: 10px;
+}
+
+#reactpuff-house {
+  height: 10px;
+}
+
+#corvinode-house {
+  height: 10px;
+}
+
+#pytherina-house {
+  height: 10px;
+}
+
+.family-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.content-checkbox-container {
+  display: flex;
+}
+
+.checkbox-container {
+  display: flex;
+}
+
+.question-container {
+  display: flex;
+}
+
+.content-ckbx-container {
+  display: flex;
+}
+
+.ckbx-container {
+  display: flex;
+}
+
+.text-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+#textarea {
+  display: flex;
+  order: 1;
+}
+
+.textarea {
+  display: flex;
+}
+
+.agreement-container {
+  display: flex;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  display: flex;
+  margin: 10px;
+}
+
+#form-output {
+  display: none;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: dimgray;
+  color: white;
+}
