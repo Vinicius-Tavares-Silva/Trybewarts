@@ -19,6 +19,20 @@
   flex-wrap: wrap;
 }
 
+#login-input{
+  height: 45px;
+  width: 250px;
+}
+
+#senha-input{
+  height: 45px;
+  width: 250px;
+}
+
+#login-btn{
+  margin-right: 5px;
+}
+
 main {
   display: flex;
 }
