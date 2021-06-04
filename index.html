@@ -24,14 +24,28 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login" action="" method="get">
         <div class="form-floating form-control-sm">
-          <input id="login-input" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <input
+            id="login-input"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
           <label for="floatingInput">E-mail</label>
         </div>
         <div class="form-floating form-control-sm">
-          <input id="senha-input" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <input
+            id="senha-input"
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
           <label for="floatingPassword">Senha</label>
         </div>
-        <button id="login-btn" type="submit" class="btn btn-outline-light">Logar</button>
+        <button id="login-btn" type="submit" class="btn btn-outline-light">
+          Logar
+        </button>
       </form>
     </header>
     <h1>Forms</h1>
@@ -39,21 +53,38 @@
       <form action="" method="get" id="evaluation-form">
         <div id="form-input">
           <div class="name-container input-group input-group-sm mb-3">
-            <span class="input-group-text green-and-white">Nome e Sobrenome</span>
-            <input type="text" name="Nome" id="input-name" />
+            <span class="input-group-text green-and-white"
+              >Nome e Sobrenome</span
+            >
+            <input class="form-control" type="text" name="Nome" id="input-name" />
+            <input class="form-control" type="text" name="Sobrenome" id="input-lastname" />
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text green-and-white" id="basic-addon1"
+              >@</span
+            >
             <input
-              type="text"
-              name="Sobrenome"
-              id="input-lastname"
+              type="email"
+              name="Email"
+              id="input-email"
+              class="form-control"
+              placeholder="Email"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
             />
-          </div> 
-            <div class="input-group input-group-sm mb-3 ">
-              <span class="input-group-text green-and-white" id="basic-addon1">@</span>
-              <input type="email" name="Email" id="input-email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text green-and-white mb-3" id="basic-addon1">Casa</span>
-            <select name="Casa" id="house" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+          </div>
+          <div class="input-group input-group-sm">
+            <span
+              class="input-group-text green-and-white mb-3"
+              id="basic-addon1"
+              >Casa</span
+            >
+            <select
+              name="Casa"
+              id="house"
+              class="form-select form-select-sm mb-3"
+              aria-label=".form-select-sm example"
+            >
               <option type="text" value="Gitnória" id="gitnoria-house">
                 Gitnória
               </option>
@@ -68,37 +99,39 @@
               </option>
             </select>
           </div>
-          <div class="family-container">
-            <label id="label-family" for="">Qual sua família?</label>
-            <div class="radio-container">
+          <div class="form-check-inline input-group-sm mb-3">
+            <span class="input-group-text green-and-white" id="label-family" for="">Qual sua família?</span>
+            <div class="form-check form-check-inline">
               <input
                 type="radio"
                 value="Frontend"
                 name="family"
                 id="frontend"
+                class="form-check-input"
               />
-              <label for="frontend">Frontend</label>
+              <label class="form-check-label" for="frontend">Frontend</label>
             </div>
-            <div class="radio-container">
-              <input type="radio" value="Backend" name="family" id="backend" />
-              <label for="backend">Backend</label>
+            <div class="form-check form-check-inline">
+              <input type="radio" value="Backend" name="family" id="backend" class="form-check-input" />
+              <label class="form-check-label" for="backend">Backend</label>
             </div>
-            <div class="radio-container">
+            <div class="form-check form-check-inline">
               <input
                 type="radio"
                 value="FullStack"
                 name="family"
                 id="fullstack"
+                class="form-check-input"
               />
-              <label for="fullstack">FullStack</label>
+              <label class="form-check-label" for="fullstack">FullStack</label>
             </div>
           </div>
-          <div class="content-container">
-            <label id="label-content" for=""
-              >Qual conteúdo você está com mais vontade de aprender?</label
+          <div class="form-check-inline input-group-sm content-container mb-3">
+            <span class="input-group-text green-and-white" id="label-content" for=""
+              >Qual conteúdo você está com mais vontade de aprender?</span
             >
             <div class="content-checkbox-container">
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
                   class="subject"
                   type="checkbox"
@@ -108,7 +141,7 @@
                 />
                 <label for="hofs">HoFs</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
                   class="subject"
                   type="checkbox"
@@ -118,7 +151,7 @@
                 />
                 <label for="jest">Jest</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
                   class="subject"
                   type="checkbox"
@@ -128,7 +161,7 @@
                 />
                 <label for="promises">Promises</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
                   class="subject"
                   type="checkbox"
@@ -138,7 +171,7 @@
                 />
                 <label for="react">React</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
                   class="subject"
                   type="checkbox"
@@ -148,7 +181,7 @@
                 />
                 <label for="sql">SQL</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
                   class="subject"
                   type="checkbox"
