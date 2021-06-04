@@ -6,6 +6,7 @@ const getFormButton = document.querySelector('#submit-btn');
 const getOutputDiv = document.querySelector('#form-output');
 const getInputDiv = document.querySelector('#form-input');
 const textArea = document.querySelector('#textarea');
+const getOutputContainer = document.querySelector('#form-output-container');
 
 function validaLogin() {
   if (
@@ -104,6 +105,7 @@ function formOutput(event) {
 
   getInputDiv.style.display = 'none';
   getOutputDiv.style.display = 'flex';
+  getOutputContainer.style.display = 'flex';
 }
 getFormButton.addEventListener('click', formOutput);
 

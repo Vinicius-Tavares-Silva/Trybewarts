@@ -50,7 +50,7 @@
     </header>
     <main>
       <form action="" method="get" id="evaluation-form">
-        <div id="form-input">
+        <div class="card" id="form-input">
           <h1 id="forms-title">Formulário de Inscrição</h1>
           <div class="name-container input-group input-group-sm mb-3">
             <span class="input-group-text green-and-white"
@@ -357,7 +357,13 @@
             <button class="btn btn-outline-light btn-lg" type="submit" id="submit-btn" disabled>Enviar</button>
           </div>
         </div>
-        <div id="form-output"></div>
+        <div class="card" id="form-output-container">
+          <div class="card-header green-and-white">
+            <h2>informações Coletadas</h2>
+          </div>
+          <div class="card-body" id="form-output"></div>
+        </div>
+        
       </form>
       <img
         id="trybewarts-forms-logo"

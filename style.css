@@ -48,11 +48,15 @@ main {
 }
 
 #form-input{
-  border: 1px solid rgb(214, 217, 220);
-  border-radius: 3px;
   margin: 10px;
   padding: 5px;
 }
+
+#form-output{
+  margin: 10px;
+  padding: 5px;
+}
+
 
 #forms-title{
   color: rgb(93, 96, 99);
@@ -123,6 +127,11 @@ main {
   background-color: rgb(50, 167, 145);
 }
 
+#form-output-container{
+  display: none;
+  margin: 10px;
+}
+
 #form-output {
   display: none;
   flex-direction: column;
@@ -133,4 +142,5 @@ footer {
   justify-content: center;
   background-color: rgb(93, 96, 99);
   color: white;
+  height: 31px;
 }
