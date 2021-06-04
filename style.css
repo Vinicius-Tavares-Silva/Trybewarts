@@ -46,6 +46,12 @@ main {
   width: 675px;
 }
 
+#forms-title{
+  color: rgb(50, 167, 145);
+  text-align: center;
+  margin-top: 10px;
+}
+
 .name-container {
   display: flex;
 }
@@ -81,7 +87,8 @@ main {
 }
 
 .ckbx-container {
-  display: flex;
+  margin-bottom: 0;
+  margin: auto 0.5rem auto 0.2rem;
 }
 
 .text-container {
@@ -90,17 +97,12 @@ main {
   justify-content: space-evenly;
 }
 
-#textarea {
-  display: flex;
-  order: 1;
-}
-
-.textarea {
-  display: flex;
-}
-
 .agreement-container {
   display: flex;
+}
+
+#label-infos{
+  margin-right: 7px;
 }
 
 .submit-container {
@@ -111,6 +113,7 @@ main {
 #submit-btn {
   display: flex;
   margin: 10px;
+  background-color: rgb(50, 167, 145);
 }
 
 #form-output {
