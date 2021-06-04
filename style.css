@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .trybewarts-header-logo {
@@ -29,12 +29,14 @@
   width: 250px;
 }
 
-#login-btn{
-  margin-right: 5px;
-}
-
 main {
   display: flex;
+  justify-content: space-around;
+}
+
+.green-and-white{
+  background-color: rgb(50, 167, 145);
+  color: white;
 }
 
 #evaluation-form {
@@ -53,33 +55,6 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-/* #input-name {
-}
-#input-lastname {
-}
-#input-email {
-} */
-
-#house {
-  height: 20px;
-}
-
-#gitnoria-house {
-  height: 10px;
-}
-
-#reactpuff-house {
-  height: 10px;
-}
-
-#corvinode-house {
-  height: 10px;
-}
-
-#pytherina-house {
-  height: 10px;
 }
 
 .family-container {

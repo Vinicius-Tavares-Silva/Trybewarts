@@ -38,23 +38,22 @@
     <main>
       <form action="" method="get" id="evaluation-form">
         <div id="form-input">
-          <div class="name-container">
-            <input type="text" name="Nome" id="input-name" placeholder="Nome" />
+          <div class="name-container input-group input-group-sm mb-3">
+            <span class="input-group-text green-and-white">Nome e Sobrenome</span>
+            <input type="text" name="Nome" id="input-name" />
             <input
               type="text"
               name="Sobrenome"
               id="input-lastname"
-              placeholder="Sobrenome"
             />
-          </div>
-          <div class="emailAndItems-container">
-            <input
-              type="email"
-              name="Email"
-              id="input-email"
-              placeholder="Email"
-            />
-            <select name="Casa" id="house">
+          </div> 
+            <div class="input-group input-group-sm mb-3 ">
+              <span class="input-group-text green-and-white" id="basic-addon1">@</span>
+              <input type="email" name="Email" id="input-email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text green-and-white mb-3" id="basic-addon1">Casa</span>
+            <select name="Casa" id="house" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
               <option type="text" value="Gitnória" id="gitnoria-house">
                 Gitnória
               </option>
