@@ -1,7 +1,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  border: 1px solid rgb(214, 217, 220);
+  justify-content: space-around;
 }
 
 .trybewarts-header-logo {
@@ -19,14 +20,47 @@
   flex-wrap: wrap;
 }
 
+#login-input{
+  height: 45px;
+  width: 250px;
+}
+
+#senha-input{
+  height: 45px;
+  width: 250px;
+}
+
 main {
   display: flex;
+  justify-content: space-around;
+  color: rgb(93, 96, 99);
+}
+
+.green-and-white{
+  background-color: rgb(50, 167, 145);
+  color: white;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+#form-input{
+  margin: 10px;
+  padding: 5px;
+}
+
+#form-output{
+  margin: 10px;
+  padding: 5px;
+}
+
+
+#forms-title{
+  color: rgb(93, 96, 99);
+  text-align: center;
 }
 
 .name-container {
@@ -39,33 +73,6 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-/* #input-name {
-}
-#input-lastname {
-}
-#input-email {
-} */
-
-#house {
-  height: 20px;
-}
-
-#gitnoria-house {
-  height: 10px;
-}
-
-#reactpuff-house {
-  height: 10px;
-}
-
-#corvinode-house {
-  height: 10px;
-}
-
-#pytherina-house {
-  height: 10px;
 }
 
 .family-container {
@@ -91,7 +98,8 @@ main {
 }
 
 .ckbx-container {
-  display: flex;
+  margin-bottom: 0;
+  margin: auto 0.4rem auto 0.1rem;
 }
 
 .text-container {
@@ -100,17 +108,12 @@ main {
   justify-content: space-evenly;
 }
 
-#textarea {
-  display: flex;
-  order: 1;
-}
-
-.textarea {
-  display: flex;
-}
-
 .agreement-container {
   display: flex;
+}
+
+#label-infos{
+  margin-right: 7px;
 }
 
 .submit-container {
@@ -120,6 +123,12 @@ main {
 
 #submit-btn {
   display: flex;
+  margin: 10px;
+  background-color: rgb(50, 167, 145);
+}
+
+#form-output-container{
+  display: none;
   margin: 10px;
 }
 
@@ -131,6 +140,7 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  background-color: dimgray;
+  background-color: rgb(93, 96, 99);
   color: white;
+  height: 31px;
 }

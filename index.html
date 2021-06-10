@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Trybewarts</title>
   </head>
   <body>
     <header class="header">
@@ -16,32 +23,78 @@
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login" action="" method="get">
-        <input id="login-input" type="text" placeholder="Login" />
-        <input id="senha-input" type="text" placeholder="Senha" />
-        <button id="login-btn" type="submit">Logar</button>
+        <div class="form-floating form-control-sm">
+          <input
+            id="login-input"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">E-mail</label>
+        </div>
+        <div class="form-floating form-control-sm">
+          <input
+            id="senha-input"
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Senha</label>
+        </div>
+        <button id="login-btn" type="submit" class="btn btn-outline-light">
+          Logar
+        </button>
       </form>
     </header>
-    <h1>Forms</h1>
     <main>
       <form action="" method="get" id="evaluation-form">
-        <div id="form-input">
-          <div class="name-container">
-            <input type="text" name="Nome" id="input-name" placeholder="Nome" />
+        <div class="card" id="form-input">
+          <h1 id="forms-title">Formulário de Inscrição</h1>
+          <div class="name-container input-group input-group-sm mb-3">
+            <span class="input-group-text green-and-white"
+              >Nome e Sobrenome</span
+            >
             <input
+              class="form-control"
+              type="text"
+              name="Nome"
+              id="input-name"
+            />
+            <input
+              class="form-control"
               type="text"
               name="Sobrenome"
               id="input-lastname"
-              placeholder="Sobrenome"
             />
           </div>
-          <div class="emailAndItems-container">
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text green-and-white" id="basic-addon1"
+              >@</span
+            >
             <input
               type="email"
               name="Email"
               id="input-email"
+              class="form-control"
               placeholder="Email"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
             />
-            <select name="Casa" id="house">
+          </div>
+          <div class="input-group input-group-sm">
+            <span
+              class="input-group-text green-and-white mb-3"
+              id="basic-addon1"
+              >Casa</span
+            >
+            <select
+              name="Casa"
+              id="house"
+              class="form-select form-select-sm mb-3"
+              aria-label=".form-select-sm example"
+            >
               <option type="text" value="Gitnória" id="gitnoria-house">
                 Gitnória
               </option>
@@ -56,39 +109,55 @@
               </option>
             </select>
           </div>
-          <div class="family-container">
-            <label id="label-family" for="">Qual sua família?</label>
-            <div class="radio-container">
+          <div class="form-check-inline input-group-sm mb-3">
+            <span
+              class="input-group-text green-and-white"
+              id="label-family"
+              for=""
+              >Qual sua família?</span
+            >
+            <div class="form-check form-check-inline">
               <input
                 type="radio"
                 value="Frontend"
                 name="family"
                 id="frontend"
+                class="form-check-input"
               />
-              <label for="frontend">Frontend</label>
+              <label class="form-check-label" for="frontend">Frontend</label>
             </div>
-            <div class="radio-container">
-              <input type="radio" value="Backend" name="family" id="backend" />
-              <label for="backend">Backend</label>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                value="Backend"
+                name="family"
+                id="backend"
+                class="form-check-input"
+              />
+              <label class="form-check-label" for="backend">Backend</label>
             </div>
-            <div class="radio-container">
+            <div class="form-check form-check-inline">
               <input
                 type="radio"
                 value="FullStack"
                 name="family"
                 id="fullstack"
+                class="form-check-input"
               />
-              <label for="fullstack">FullStack</label>
+              <label class="form-check-label" for="fullstack">FullStack</label>
             </div>
           </div>
-          <div class="content-container">
-            <label id="label-content" for=""
-              >Qual conteúdo você está com mais vontade de aprender?</label
+          <div class="form-check-inline input-group-sm content-container mb-3">
+            <span
+              class="input-group-text green-and-white"
+              id="label-content"
+              for=""
+              >Qual conteúdo você está com mais vontade de aprender?</span
             >
             <div class="content-checkbox-container">
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
-                  class="subject"
+                  class="form-check-input subject"
                   type="checkbox"
                   value="HoFs"
                   name="content"
@@ -96,9 +165,9 @@
                 />
                 <label for="hofs">HoFs</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
-                  class="subject"
+                  class="form-check-input subject"
                   type="checkbox"
                   value="Jest"
                   name="content"
@@ -106,9 +175,9 @@
                 />
                 <label for="jest">Jest</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
-                  class="subject"
+                  class="form-check-input subject"
                   type="checkbox"
                   value="Promises"
                   name="content"
@@ -116,9 +185,9 @@
                 />
                 <label for="promises">Promises</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
-                  class="subject"
+                  class="form-check-input subject"
                   type="checkbox"
                   value="React"
                   name="content"
@@ -126,9 +195,9 @@
                 />
                 <label for="react">React</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
-                  class="subject"
+                  class="form-check-input subject"
                   type="checkbox"
                   value="SQL"
                   name="content"
@@ -136,9 +205,9 @@
                 />
                 <label for="sql">SQL</label>
               </div>
-              <div class="checkbox-container">
+              <div class="form-check form-check-inline">
                 <input
-                  class="subject"
+                  class="form-check-input subject"
                   type="checkbox"
                   value="Python"
                   name="content"
@@ -148,66 +217,153 @@
               </div>
             </div>
           </div>
-          <div class="question-container">
-            <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+          <div class="form-check-inline input-group-sm question-container mb-3">
+            <span
+              class="input-group-text green-and-white"
+              id="label-rate"
+              for=""
+              >Como você avalia a Trybewarts?</span
+            >
             <div class="content-ckbx-container">
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="1" id="" />1
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="1"
+                  id="1"
+                />
+                <label class="form-check-label" for="1">1</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="2" id="" />2
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="2"
+                  id="2"
+                />
+                <label class="form-check-label" for="2">2</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="3" id="" />3
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="3"
+                  id="3"
+                />
+                <label class="form-check-label" for="3">3</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="4" id="" />4
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="4"
+                  id="4"
+                />
+                <label class="form-check-label" for="4">4</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="5" id="" />5
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="5"
+                  id="5"
+                />
+                <label class="form-check-label" for="5">5</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="6" id="" />6
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="6"
+                  id="6"
+                />
+                <label class="form-check-label" for="6">6</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="7" id="" />7
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="7"
+                  id="7"
+                />
+                <label class="form-check-label" for="7">7</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="8" id="" />8
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="8"
+                  id="8"
+                />
+                <label class="form-check-label" for="8">8</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="9" id="" />9
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="9"
+                  id="9"
+                />
+                <label class="form-check-label" for="9">9</label>
               </div>
-              <div class="ckbx-container">
-                <input type="radio" name="rate" value="10" id="" />10
+              <div class="form-check form-check-inline ckbx-container">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rate"
+                  value="10"
+                  id="10"
+                />
+                <label class="form-check-label" for="10">10</label>
               </div>
             </div>
           </div>
           <div class="text-container">
-            <textarea
-              name=""
-              id="textarea"
-              maxlength="500"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <label class="textarea" for="textarea">Deixe seu comentário:</label>
-            <label id="counter" for=""
-              >500</label
-            >
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text textarea green-and-white" for="textarea"
+                >Deixe seu comentário:</span
+              >
+              <textarea
+                name=""
+                id="textarea"
+                class="form-control"
+                maxlength="500"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <span class="input-group-text green-and-white" id="counter" for="">500</span>
+            </div>
           </div>
           <div class="agreement-container">
-            <label id="label-infos" for="agreement"
-              >Você concorda com o uso das informações acima?</label
-            >
-            <input type="checkbox" name="agreement" id="agreement" />
-            
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-text green-and-white">
+                <span id="label-infos" for="agreement"
+                >Você concorda com o uso das informações acima?</span
+              >
+                <input class="form-check-input mt-0" type="checkbox" name="agreement" id="agreement" aria-label="Checkbox for following text input">
+              </div>
+            </div>
           </div>
           <div class="submit-container">
-            <button type="submit" id="submit-btn" disabled>Enviar</button>
+            <button class="btn btn-outline-light btn-lg" type="submit" id="submit-btn" disabled>Enviar</button>
           </div>
         </div>
-        <div id="form-output"></div>
+        <div class="card" id="form-output-container">
+          <div class="card-header green-and-white">
+            <h2>informações Coletadas</h2>
+          </div>
+          <div class="card-body" id="form-output"></div>
+        </div>
+        
       </form>
       <img
         id="trybewarts-forms-logo"
@@ -215,7 +371,7 @@
         alt="Logo Trybewarts"
       />
     </main>
-    <footer>Direitos reservados à Trybewarts©</footer>
+    <footer>Todos direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
 </html>
